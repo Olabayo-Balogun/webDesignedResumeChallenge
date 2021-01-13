@@ -1,0 +1,223 @@
+/* COLOR PALETTE
+https://coolors.co/f7fff7-343434-2f3061-ffe66d-a1c6d7
+#F7FFF7 - almost white
+#343434 - dark gray - almost black
+#2F3061 - blue dark
+#FFE66D - yellow
+#A1C6D7 - blue light */
+
+/* Global styles
+------------------------------------*/
+
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
+body {
+  color: hsl(0, 0%, 20%);
+  padding: 0;
+  margin: 0;
+  line-height: 150%;
+  font-family: "Monteserrat", sans-serif;
+}
+
+.content-wrap {
+  max-width: 50rem;
+  width: 85%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+
+.content-wrap.other-experience {
+  padding: 0;
+}
+
+h1 {
+  font-size: 4rem;
+  font-family: "caveat", cursive;
+  line-height: 150%;
+}
+h2 {
+  margin: 0;
+  font-size: 2rem;
+  font-family: "caveat", cursive;
+}
+
+h3 {
+  font-size: 1.3rem;
+  margin-bottom: 0;
+}
+
+.item-details h3 + p {
+  font-style: italic;
+}
+
+.item-details h3 ~ p {
+  margin: 0;
+}
+
+.divider > section {
+  border-bottom: 1px dashed #343434;
+  padding: 1.5rem 0;
+}
+
+.divider > section:last-of-type {
+  border-bottom: none;
+}
+
+img {
+  width: 18.75rem;
+}
+
+a {
+  color: #ffe66d;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Profile
+------------------------------------*/
+
+header {
+  background: #2f3061;
+  color: #f7fff7;
+}
+
+#myPictures{
+  display: flex;
+  width: 80%;
+  margin: auto;
+  margin-right: 13%;
+}
+
+#myPictures img{
+  width: 20%;
+  margin-right: 2%;
+}
+/* Projects
+------------------------------------*/
+
+.projects {
+  background: #f7fff7;
+}
+
+.projects a {
+  color: #2f3061;
+}
+
+.projects .btn {
+  color: #f7fff7;
+  background: #2f3061;
+  text-decoration: none;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  display: inline-block;
+}
+
+li {
+  text-align: justify;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.projects .btn:hover {
+  background: rgba(47, 48, 97, 80%);
+}
+
+.project-item {
+  overflow: hidden;
+  line-height: 120%;
+}
+
+.project-item h3 {
+  margin-top: 0;
+}
+
+/* Work Experience
+------------------------------------*/
+.work-experience {
+  background: #a1c6d7;
+}
+
+/* Education
+------------------------------------*/
+span {
+  font-style: italic;
+}
+
+.education {
+  background-image: url(../Img/joanna-kosinska-unsplash.jpg);
+  background-size: cover;
+  background-position: top right;
+  padding-bottom: 8rem;
+}
+
+.education p {
+  width: 60%;
+}
+
+/* Contact Info
+------------------------------------*/
+footer {
+  background: #343434;
+  color: #f7fff7;
+}
+
+.contact-list {
+  list-style-type: none;
+  padding: 0;
+}
+
+.contact-list a {
+  padding: 1rem;
+  display: inline-block;
+}
+
+/* Responsive Web Design
+------------------------------------*/
+@media screen and (min-width: 750px) {
+  header,
+  footer {
+    text-align: center;
+  }
+  .project-item img {
+    float: left;
+    margin-right: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .job-item {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    column-gap: 1.2rem;
+  }
+
+  .contact-list {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 749px) {
+  h1 {
+    font-size: 4rem;
+  }
+  h1,
+  h2 {
+    line-height: 100%;
+  }
+
+  .contact-list a {
+    padding: 0.2rem;
+  }
+}
